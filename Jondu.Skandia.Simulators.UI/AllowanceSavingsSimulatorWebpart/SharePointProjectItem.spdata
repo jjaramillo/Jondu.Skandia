@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="AllowanceSavingsSimulatorWebpartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="AllowanceSavingsSimulatorWebpart\" Type="ElementManifest" />
+    <ProjectItemFile Source="AllowanceSavingsSimulatorWebpart.webpart" Target="AllowanceSavingsSimulatorWebpart\" Type="ElementFile" />
+    <ProjectItemFile Source="AllowanceSavingsSimulatorWebpartUserControl.ascx" Target="CONTROLTEMPLATES\Jondu.Skandia.Simulators.UI\AllowanceSavingsSimulatorWebpart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Jondu.Skandia.Simulators.UI.AllowanceSavingsSimulatorWebpart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

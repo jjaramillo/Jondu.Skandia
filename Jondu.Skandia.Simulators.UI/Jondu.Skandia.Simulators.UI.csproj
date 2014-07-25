@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6BF0A11-3EED-4C7F-8B31-50850C254F1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jondu.Skandia.Simulators.UI</RootNamespace>
+    <AssemblyName>Jondu.Skandia.Simulators.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpart.cs" />
+    <Compile Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpartUserControl.ascx.cs">
+      <DependentUpon>AllowanceSavingsSimulatorWebpartUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpartUserControl.ascx.designer.cs">
+      <DependentUpon>AllowanceSavingsSimulatorWebpartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISimulator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpart.webpart" />
+    <None Include="AllowanceSavingsSimulatorWebpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c71e650-8bbb-46d7-9d01-c3d911090a71}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Jondu - Simuladores Skandia\Jondu - Simuladores Skandia.feature">
+      <FeatureId>{cb5c3b81-d384-4c76-9b2b-d2f392bcfbaa}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8945e7c3-3192-43fb-b002-dda958fc3180}</SharePointProjectItemId>
+    </None>
+    <None Include="INC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0ed1d62-9f52-41c7-98d0-b4befca74e58}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{3c8c3e52-e8e1-4e51-a14a-41aa319669bf}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Jondu.Skandia.Simulators\" />
+    <Folder Include="INC\Jondu.Skandia.Simulators\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpartUserControl.ascx" />
+    <Content Include="AllowanceSavingsSimulatorWebpart\Elements.xml" />
+    <Content Include="Features\Jondu - Simuladores Skandia\Jondu - Simuladores Skandia.Template.xml">
+      <DependentUpon>Jondu - Simuladores Skandia.feature</DependentUpon>
+    </Content>
+    <Content Include="INC\Jondu.Skandia.Simulators\js\AllowanceSavingsViewModel.js" />
+    <Content Include="INC\Jondu.Skandia.Simulators\js\AllowanceTotalViewModel.js" />
+    <Content Include="INC\Jondu.Skandia.Simulators\js\DebtFinancialPlanViewModel.js" />
+    <Content Include="INC\Jondu.Skandia.Simulators\js\FixedlCostsFinancialPlanViewModel.js" />
+    <Content Include="INC\Jondu.Skandia.Simulators\js\HousingFinancialPlanViewModel.js" />
+    <Content Include="INC\Jondu.Skandia.Simulators\js\InsuranceFinancialPlanViewModel.js" />
+    <Content Include="INC\Jondu.Skandia.Simulators\js\jquery-1.11.1.min.js" />
+    <Content Include="INC\Jondu.Skandia.Simulators\js\knockout-3.1.0.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

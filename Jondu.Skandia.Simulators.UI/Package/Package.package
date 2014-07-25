@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3c8c3e52-e8e1-4e51-a14a-41aa319669bf" solutionId="3c8c3e52-e8e1-4e51-a14a-41aa319669bf" resetWebServer="false" sharePointProductVersion="15.0" name="Jondu.Skandia.Simulators.UI" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cb5c3b81-d384-4c76-9b2b-d2f392bcfbaa" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="b0ed1d62-9f52-41c7-98d0-b4befca74e58" />
+    <projectItemReference itemId="8945e7c3-3192-43fb-b002-dda958fc3180" />
+  </projectItems>
+</package>
