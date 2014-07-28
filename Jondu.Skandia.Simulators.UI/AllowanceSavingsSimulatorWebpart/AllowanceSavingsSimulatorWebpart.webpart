@@ -7,8 +7,8 @@
     </metaData>
     <data>
       <properties>
-        <property name="Title" type="string">Jondu.Skandia.Simulators.UI - AllowanceSavingsSimulatorWebpart</property>
-        <property name="Description" type="string">My Visual Web Part</property>
+        <property name="Title" type="string">Ahorro de Mesada</property>
+        <property name="Description" type="string">Elemento web de simulador de ahorro de mesada</property>
       </properties>
     </data>
   </webPart>

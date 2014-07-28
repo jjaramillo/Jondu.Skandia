@@ -16,6 +16,9 @@ namespace Jondu.Skandia.Simulators.UI.AllowanceSavingsSimulatorWebpart
         protected override void CreateChildControls()
         {
             Control control = Page.LoadControl(_ascxPath);
+            BaseSimulatorUserControl baseCtrl = control as BaseSimulatorUserControl;
+            baseCtrl.UseJquery = UseJquery;
+            baseCtrl.RESTServiceBaseUrl = RESTServiceBaseUrl;
             Controls.Add(control);
         }
 

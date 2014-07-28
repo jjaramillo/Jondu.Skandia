@@ -56,9 +56,13 @@
     <Compile Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpart.cs" />
     <Compile Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpartUserControl.ascx.cs">
       <DependentUpon>AllowanceSavingsSimulatorWebpartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpartUserControl.ascx.designer.cs">
       <DependentUpon>AllowanceSavingsSimulatorWebpartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseSimulatorUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ISimulator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
