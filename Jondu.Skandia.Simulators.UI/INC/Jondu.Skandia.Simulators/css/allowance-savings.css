@@ -1,0 +1,212 @@
+@charset "utf-8";
+@import url("../webfonts/Futura__Light_/stylesheet.css");
+@import url("../webfonts/Futura_Bold/stylesheet.css");
+@import url("../webfonts/Letter_Gothic_Std/stylesheet.css");
+@import url("../webfonts/Orator_Std/stylesheet.css");
+
+
+
+/* CSS Document */
+
+::-webkit-input-placeholder {
+   color: #949496;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #949496;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #949496;  
+}
+
+:-ms-input-placeholder {  
+   color: #949496;  
+}
+
+
+.simulador {
+	height: 183px;
+	width: 306px;
+	background-image: url(../img/back1.jpg);
+}
+
+.simulador2 {
+	height: 183px;
+	width: 306px;
+	background-image: url(../img/back2.jpg);
+}
+
+.simulador3 {
+	height: 183px;
+	width: 306px;
+	background-image: url(../img/back3.jpg);
+}
+
+.content {
+	padding-top: 21px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.content2 {
+	padding-top: 21px;
+	padding-right: 20px;
+	padding-left: 50px;
+}
+
+.container {
+	height: 394px;
+	width: 436px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.menu1 {
+	margin-left: 7px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(../img/home-colombia.jpg);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+}
+.btn-simular {
+	height: 36px;
+	width: 126px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/btn-sin.png);
+}
+
+.btn-simular:hover {
+
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/btn-sin-h.png);
+}
+
+h1 {
+	font-family: "Futura (Light)";
+	font-size: 24px;
+	line-height: 25px;
+	padding: 0px;
+	text-align: center;
+	color: #575757;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.titulo1 {
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+h1 strong {
+	font-family: "Futura Bold";
+	color: #A0BF36;
+	font-size: 25px;
+	margin: 0px;
+	padding: 0px;
+}
+h2 {
+	font-family: "Futura (Light)";
+	font-size: 20px;
+	line-height: 22px;
+	padding: 0px;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	color: #333;
+}
+h2 strong {
+	font-family: "Futura Bold";
+	color: #333333;
+}
+h3 {
+	font-family: "Futura (Light)";
+	font-size: 15px;
+	text-align: center;
+	padding: 0px;
+	color: #006651;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	line-height: 15px;
+}
+
+
+
+.text-form {
+	width: 92%;
+	margin-bottom: 10px;
+	height: 26px;
+	color: #00614D;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	border: 1px solid #d8d8d8;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-left: 10px;
+	font-weight: normal;
+}
+.corto {
+	width: 85%;
+	height: 21px;
+	padding-left: 10px;
+}
+.home {
+	background-image: url(../img/icon-house.png);
+	background-position: left;
+	height: 50px;
+	width: 150px;
+}
+.iconos {
+	background-image: url(../img/icon-house.png) !important ;
+	background-color: transparent !important;
+}
+.menu-inf {
+	height: 29px;
+	width: 292px;
+	margin-left: 7px;
+	background-color: #EBEBEB;
+	padding-top: 6px;
+}
+.box-menu {
+	float: left;
+	width: 70px;
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+}
+.box-menu a {
+	vertical-align: middle;
+	height: 34px;
+	text-decoration: none;
+	color: #006651;
+	font-family: "Futura Bold";
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: normal;
+}
+.box-menu.selected {
+	background-image: url(../img/selected.png);
+	height: 28px;
+	padding-top: 10px;
+	margin-top: -10px;
+	color: #FFF;
+	padding-right: 5px;
+	padding-left: 5px;
+	background-repeat: no-repeat;
+	font-weight: normal;
+}

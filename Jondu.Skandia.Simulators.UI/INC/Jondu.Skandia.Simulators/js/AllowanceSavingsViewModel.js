@@ -15,12 +15,37 @@ var AllowanceSavingsViewModel = function (allowAnceSavingsViewModelID, baseRESTA
     function OnSuccess(data, status, jqXHR)
     {
         SP.UI.ModalDialog.commonModalDialogClose(SP.UI.DialogResult.OK);
-        console.log(data);
+        _self.Savings(data.result);
+        GoToStep3();
     }
+
+    this.Step1Visibility = ko.observable(true);
+    this.Step2Visibility = ko.observable(false);
+    this.Step3Visibility = ko.observable(false);
 
     this.AimDesired = ko.observable(0);
     this.NumberMonth = ko.observable(0);
     this.Rentability = ko.observable(0.0);
+    this.Savings = ko.observable();
+
+    this.ShowSimulator = function ()
+    {
+        GoToStep2();
+    }
+
+    function GoToStep2()
+    {
+        _self.Step1Visibility(false);
+        _self.Step2Visibility(true);
+        _self.Step3Visibility(false);
+    }
+
+    function GoToStep3()
+    {
+        _self.Step1Visibility(false);
+        _self.Step2Visibility(false);
+        _self.Step3Visibility(true);
+    }
 
     this.Submit = function () {
         SP.UI.ModalDialog.showWaitScreenWithNoClose(SP.Res.dialogLoading15);
