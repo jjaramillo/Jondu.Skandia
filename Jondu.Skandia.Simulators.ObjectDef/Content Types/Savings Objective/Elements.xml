@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01009F13EC22148E40EAB31651BCB0FAA739"
+               Name="Objetivo de Ahorro"
+               Group="Jondu - Skandia (Simuladores)"
+               Description="Objetivo de ahorro usado en el simulador de ahorro de skandia"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{5FBFC370-992E-4887-A26A-0D8F2211169B}" Name="Jondu_Interest_Rate" Required="TRUE"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

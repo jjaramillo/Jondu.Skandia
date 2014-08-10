@@ -6,6 +6,12 @@ namespace Jondu.Skandia.Simulators.UI
 {
     public class BaseSimulatorUserControl : UserControl, ISimulator
     {
+        public DecimalSeparators DecimalSeparator
+        {
+            get { return ViewState["DecimalSeparator"] == null ? DecimalSeparators.Default : (DecimalSeparators)ViewState["DecimalSeparator"]; }
+            set { ViewState["DecimalSeparator"] = value; }
+        }
+
         public bool UseJquery
         {
             get
@@ -39,6 +45,7 @@ namespace Jondu.Skandia.Simulators.UI
             base.OnInit(e);
             _SPPageStatusSetter = new SPPageStatusSetter();
             _ScriptManagerProxy = new ScriptManagerProxy();
+            _ScriptManagerProxy.Scripts.Add(new ScriptReference("/_layouts/15/INC/Jondu.Skandia.Simulators/js/NumberExtensions.js"));
             if (UseJquery)
                 _ScriptManagerProxy.Scripts.Add(new ScriptReference("/_layouts/15/INC/Jondu.Skandia.Simulators/js/jquery-1.11.1.min.js"));
 
@@ -62,5 +69,40 @@ namespace Jondu.Skandia.Simulators.UI
             return !string.IsNullOrEmpty(RESTServiceBaseUrl);
         }
 
+        public string CallJavascript
+        {
+            get
+            {
+                return ViewState["CallJavascript"] == null ? string.Empty : ViewState["CallJavascript"].ToString();
+            }
+            set
+            {
+                ViewState["CallJavascript"] = value;
+            }
+        }
+
+        public string ScheduleJavascript
+        {
+            get
+            {
+                return ViewState["ScheduleJavascript"] == null ? string.Empty : ViewState["ScheduleJavascript"].ToString();
+            }
+            set
+            {
+                ViewState["ScheduleJavascript"] = value;
+            }
+        }
+
+        public string ChatJavascript
+        {
+            get
+            {
+                return ViewState["ChatJavascript"] == null ? string.Empty : ViewState["ChatJavascript"].ToString();
+            }
+            set
+            {
+                ViewState["ChatJavascript"] = value;
+            }
+        }
     }
 }

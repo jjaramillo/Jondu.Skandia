@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jondu.Skandia.Simulators.UI", "Jondu.Skandia.Simulators.UI\Jondu.Skandia.Simulators.UI.csproj", "{C6BF0A11-3EED-4C7F-8B31-50850C254F1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jondu.Skandia.Simulators.ObjectDef", "Jondu.Skandia.Simulators.ObjectDef\Jondu.Skandia.Simulators.ObjectDef.csproj", "{6504AA1B-36EA-4E49-8826-79F332AA25E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,12 @@ Global
 		{C6BF0A11-3EED-4C7F-8B31-50850C254F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6BF0A11-3EED-4C7F-8B31-50850C254F1B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C6BF0A11-3EED-4C7F-8B31-50850C254F1B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6504AA1B-36EA-4E49-8826-79F332AA25E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6504AA1B-36EA-4E49-8826-79F332AA25E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6504AA1B-36EA-4E49-8826-79F332AA25E9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6504AA1B-36EA-4E49-8826-79F332AA25E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6504AA1B-36EA-4E49-8826-79F332AA25E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6504AA1B-36EA-4E49-8826-79F332AA25E9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

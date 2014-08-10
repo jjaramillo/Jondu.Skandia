@@ -70,8 +70,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #333;
 	background-attachment: scroll;
-	background-color: transparent;
-	background-image: url(../img/home-colombia.jpg);
+	background-color: transparent;	
 	background-repeat: no-repeat;
 	background-position: center 10px;
 }

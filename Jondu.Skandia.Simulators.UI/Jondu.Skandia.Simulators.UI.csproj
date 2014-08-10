@@ -64,8 +64,16 @@
     <Compile Include="BaseSimulatorUserControl.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Constants\SiteColumns.cs" />
+    <Compile Include="Entities\SavingsObjective.cs" />
+    <Compile Include="Enum\DecimalSeparators.cs" />
     <Compile Include="ISimulator.cs" />
+    <Compile Include="MVP\AllowanceSavingsSimulator\AllowanceSavingsSimulatorPresenter.cs" />
+    <Compile Include="MVP\AllowanceSavingsSimulator\IAllowanceSavingsSimulatorView.cs" />
+    <Compile Include="MVP\BasePresenter.cs" />
+    <Compile Include="MVP\IView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="String.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AllowanceSavingsSimulatorWebpart\AllowanceSavingsSimulatorWebpart.webpart" />
@@ -122,6 +130,7 @@
     <Content Include="INC\Jondu.Skandia.Simulators\js\InsuranceFinancialPlanViewModel.js" />
     <Content Include="INC\Jondu.Skandia.Simulators\js\jquery-1.11.1.min.js" />
     <Content Include="INC\Jondu.Skandia.Simulators\js\knockout-3.1.0.js" />
+    <Content Include="INC\Jondu.Skandia.Simulators\js\NumberExtensions.js" />
     <Content Include="INC\Jondu.Skandia.Simulators\webfonts\Futura_Bold\stylesheet.css" />
     <Content Include="INC\Jondu.Skandia.Simulators\webfonts\Futura__Light_\stylesheet.css" />
     <Content Include="INC\Jondu.Skandia.Simulators\webfonts\Letter_Gothic_Std\stylesheet.css" />

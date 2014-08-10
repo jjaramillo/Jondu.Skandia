@@ -1,10 +1,13 @@
 ﻿/// <reference path="knockout-3.1.0.js" />
 /// <reference path="jquery-1.11.1.min.js" />
-var AllowanceSavingsViewModel = function (allowAnceSavingsViewModelID, baseRESTAPIUrl) {
+var AllowanceSavingsViewModel = function (allowAnceSavingsViewModelID, baseRESTAPIUrl, calljavascriptfunction, chatjavascriptfunction, schedulejavascriptfunction) {
     SP.SOD.executeFunc('sp.js', 'SP.ClientContext', function () { });
     var _statusID = '';
     var _self = this;
     var _baseRESTAPIUrl = baseRESTAPIUrl;
+    var _calljavascriptfunction = calljavascriptfunction;
+    var _chatjavascriptfunction = chatjavascriptfunction;
+    var _schedulejavascriptfunction = schedulejavascriptfunction;
 
     function OnError(jqXHR, status, errorMessage) {
         SP.UI.ModalDialog.commonModalDialogClose(SP.UI.DialogResult.OK);
@@ -12,10 +15,9 @@ var AllowanceSavingsViewModel = function (allowAnceSavingsViewModelID, baseRESTA
         SP.UI.Status.setStatusPriColor(_statusID, 'red');
     }
 
-    function OnSuccess(data, status, jqXHR)
-    {
+    function OnSuccess(data, status, jqXHR) {
         SP.UI.ModalDialog.commonModalDialogClose(SP.UI.DialogResult.OK);
-        _self.Savings(data.result);
+        _self.Savings(data.formatMoney(2, '.', ','));
         GoToStep3();
     }
 
@@ -23,25 +25,28 @@ var AllowanceSavingsViewModel = function (allowAnceSavingsViewModelID, baseRESTA
     this.Step2Visibility = ko.observable(false);
     this.Step3Visibility = ko.observable(false);
 
-    this.AimDesired = ko.observable(0);
-    this.NumberMonth = ko.observable(0);
-    this.Rentability = ko.observable(0.0);
+    this.AimDesired = ko.observable('');
+    this.NumberMonth = ko.observable('');
+    this.Rentability = ko.observable('');
     this.Savings = ko.observable();
 
-    this.ShowSimulator = function ()
-    {
+    this.ShowSimulator = function () {
         GoToStep2();
     }
 
-    function GoToStep2()
-    {
+    this.Chat = function () { eval(_chatjavascriptfunction); }
+
+    this.Schedule = function () { eval(_schedulejavascriptfunction); }
+
+    this.Call = function () { eval(_calljavascriptfunction); }
+
+    function GoToStep2() {
         _self.Step1Visibility(false);
         _self.Step2Visibility(true);
         _self.Step3Visibility(false);
     }
 
-    function GoToStep3()
-    {
+    function GoToStep3() {
         _self.Step1Visibility(false);
         _self.Step2Visibility(false);
         _self.Step3Visibility(true);

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{5FBFC370-992E-4887-A26A-0D8F2211169B}" Name="Jondu_Interest_Rate" StaticName="Jondu_Interest_Rate" DisplayName="Tasa de Interés"
+         Type="Number" Decimals="3" Commas="TRUE" Min="0" Max="100" Group="Jondu - Skandia (Simuladores)" Required="TRUE"/>
+</Elements> 

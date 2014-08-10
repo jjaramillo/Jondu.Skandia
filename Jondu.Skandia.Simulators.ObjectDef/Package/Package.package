@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="59d446b7-b351-4dd9-b3d7-8a9d5a4084b0" solutionId="59d446b7-b351-4dd9-b3d7-8a9d5a4084b0" resetWebServer="true" sharePointProductVersion="15.0" name="Jondu.Skandia.Simulators.ObjectDef" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b4827fab-ca8e-4c07-a42b-8cc9282276f8" />
+  </features>
+</package>

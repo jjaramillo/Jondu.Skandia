@@ -6,8 +6,8 @@
 <%@ Import Namespace="Microsoft.SharePoint" %>
 <%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AllowanceSavingsSimulatorWebpartUserControl.ascx.cs" Inherits="Jondu.Skandia.Simulators.UI.AllowanceSavingsSimulatorWebpart.AllowanceSavingsSimulatorWebpartUserControl" %>
-<SharePoint:CssLink runat="server" ID="cssstyle"  />
-<SharePoint:CssRegistration name="/_layouts/15/INC/Jondu.Skandia.Simulators/css/allowance-savings.css" runat="server"/>
+<SharePoint:CssLink runat="server" ID="cssstyle" />
+<SharePoint:CssRegistration Name="/_layouts/15/INC/Jondu.Skandia.Simulators/css/allowance-savings.css" runat="server" />
 <div id="allowanceSavingsUserControlContainer" runat="server">
     <div class="simulador" data-bind="visible: Step1Visibility">
         <div class="content">
@@ -28,7 +28,11 @@
     </div>
     <div class="simulador2" data-bind="visible: Step2Visibility">
         <div class="content2">
-            <select class="text-form" name="enteraste" data-bind="value: Rentability">
+            <asp:DropDownList runat="server" ID="ddlSavings" DataTextField="Title" DataValueField="SavingsRate"
+                data-bind="value: Rentability" class="text-form" AppendDataBoundItems="true">
+                <asp:ListItem Text="[Seleccione una meta de ahorro]" Value="0" />
+            </asp:DropDownList>
+            <%--<select class="text-form" name="enteraste" data-bind="value: Rentability">
                 <option selected="selected" value="0.5">Seleccione su meta</option>
                 <option value="1.5">Vivienda </option>
                 <option value="1.2">Educación Hijos</option>
@@ -36,7 +40,7 @@
                 <option value="1.1">Automovil </option>
                 <option value="0.9">Viajes</option>
                 <option value="1.6">Otros sueños</option>
-            </select>
+            </select>--%>
             <input class="text-form corto" placeholder="¿Valor de su meta? ($)" name="otro" type="text" data-bind="value: AimDesired">
             <input class="text-form corto" placeholder="Meses para lograrlo" name="otro" type="text" data-bind="value: NumberMonth">
         </div>
@@ -56,10 +60,10 @@
 
         </div>
         <div class="menu-inf">
-            <div class="box-menu"><a href="#">Chat</a></div>
-            <div class="box-menu"><a href="#">Programar llamada</a></div>
-            <div class="box-menu"><a href="#">Llamar</a></div>
-            <div class="box-menu selected"><a href="javascript:ShowSimulator">Simular nuevamente</a></div>
+            <div class="box-menu"><a href="javascript:void(0)" data-bind="click: Chat">Chat</a></div>
+            <div class="box-menu"><a href="javascript:void(0)" data-bind="click: Schedule">Programar llamada</a></div>
+            <div class="box-menu"><a href="javascript:void(0)" data-bind="click: Call">Llamar</a></div>
+            <div class="box-menu selected"><a href="javascript:void(0)" data-bind="click: ShowSimulator">Simular nuevamente</a></div>
         </div>
     </div>
 </div>
