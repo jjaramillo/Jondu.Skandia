@@ -20,7 +20,7 @@ namespace Jondu.Skandia.Simulators.UI.AllowanceSavingsSimulatorWebpart
                 _AllowanceSavingsSimulatorPresenter.ChangeDecimalSeparator();
                 ddlSavings.DataSource = _AllowanceSavingsSimulatorPresenter.GetSavingsObjectives();
                 ddlSavings.DataBind();
-                if (ddlSavings.Items.Count == 0)
+                if (ddlSavings.Items.Count == 1)
                 {
                     allowanceSavingsUserControlContainer.Visible = false;
                     HandleWarning("No se han configurado ningun objetivo de ahorro para este subsitio. Por favor contacte al administrador.");

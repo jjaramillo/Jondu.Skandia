@@ -30,17 +30,8 @@
         <div class="content2">
             <asp:DropDownList runat="server" ID="ddlSavings" DataTextField="Title" DataValueField="SavingsRate"
                 data-bind="value: Rentability" class="text-form" AppendDataBoundItems="true">
-                <asp:ListItem Text="[Seleccione una meta de ahorro]" Value="0" />
-            </asp:DropDownList>
-            <%--<select class="text-form" name="enteraste" data-bind="value: Rentability">
-                <option selected="selected" value="0.5">Seleccione su meta</option>
-                <option value="1.5">Vivienda </option>
-                <option value="1.2">Educación Hijos</option>
-                <option value="1.7">Educación Complementaria</option>
-                <option value="1.1">Automovil </option>
-                <option value="0.9">Viajes</option>
-                <option value="1.6">Otros sueños</option>
-            </select>--%>
+                <asp:ListItem Text="[Seleccione una meta de ahorro]" Value="" />
+            </asp:DropDownList>            
             <input class="text-form corto" placeholder="¿Valor de su meta? ($)" name="otro" type="text" data-bind="value: AimDesired">
             <input class="text-form corto" placeholder="Meses para lograrlo" name="otro" type="text" data-bind="value: NumberMonth">
         </div>

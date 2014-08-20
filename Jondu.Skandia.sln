@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jondu.Skandia.Simulators.UI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jondu.Skandia.Simulators.ObjectDef", "Jondu.Skandia.Simulators.ObjectDef\Jondu.Skandia.Simulators.ObjectDef.csproj", "{6504AA1B-36EA-4E49-8826-79F332AA25E9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Powershell", "Powershell", "{2E185EC2-0A30-422D-B4BA-901FB6EAAA5A}"
+	ProjectSection(SolutionItems) = preProject
+		Powershell\Installer.ps1 = Powershell\Installer.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

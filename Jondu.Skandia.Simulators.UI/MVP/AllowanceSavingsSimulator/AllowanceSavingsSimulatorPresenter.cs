@@ -16,7 +16,7 @@ namespace Jondu.Skandia.Simulators.UI.MVP.AllowanceSavingsSimulator
         public IList<SavingsObjective> GetSavingsObjectives()
         {
             List<SavingsObjective> savingsObjectives = new List<SavingsObjective>();
-            SPList targetList = _View.Web.GetList(string.Format("{0}/Lists/Objectives", _View.Web.ServerRelativeUrl));
+            SPList targetList = _View.Web.GetList(string.Format("{0}/Lists/Objectives", _View.Web.Url));
             SPListItemCollection listElements = targetList.Items;
             savingsObjectives = (from SPListItem listItem in listElements
                                  orderby listItem.Title 
