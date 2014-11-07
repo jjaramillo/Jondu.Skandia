@@ -86,10 +86,6 @@
     <None Include="Images\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8945e7c3-3192-43fb-b002-dda958fc3180}</SharePointProjectItemId>
     </None>
-    <None Include="INC\Jondu.Skandia.Simulators\webfonts\Futura_Bold\Futura-Bold.ttf" />
-    <None Include="INC\Jondu.Skandia.Simulators\webfonts\Futura__Light_\Futura_Light.ttf" />
-    <None Include="INC\Jondu.Skandia.Simulators\webfonts\Letter_Gothic_Std\Letter Gothic Std.ttf" />
-    <None Include="INC\Jondu.Skandia.Simulators\webfonts\Orator_Std\Orator Std.ttf" />
     <None Include="INC\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b0ed1d62-9f52-41c7-98d0-b4befca74e58}</SharePointProjectItemId>
     </None>
@@ -118,6 +114,7 @@
     <Content Include="INC\Jondu.Skandia.Simulators\img\back3.jpg" />
     <Content Include="INC\Jondu.Skandia.Simulators\img\btn-sin-h.png" />
     <Content Include="INC\Jondu.Skandia.Simulators\img\btn-sin.png" />
+    <Content Include="INC\Jondu.Skandia.Simulators\img\first.png" />
     <Content Include="INC\Jondu.Skandia.Simulators\img\menu1.png" />
     <Content Include="INC\Jondu.Skandia.Simulators\img\selected.png" />
     <Content Include="INC\Jondu.Skandia.Simulators\img\tex-final-1.png" />
@@ -131,10 +128,6 @@
     <Content Include="INC\Jondu.Skandia.Simulators\js\jquery-1.11.1.min.js" />
     <Content Include="INC\Jondu.Skandia.Simulators\js\knockout-3.1.0.js" />
     <Content Include="INC\Jondu.Skandia.Simulators\js\NumberExtensions.js" />
-    <Content Include="INC\Jondu.Skandia.Simulators\webfonts\Futura_Bold\stylesheet.css" />
-    <Content Include="INC\Jondu.Skandia.Simulators\webfonts\Futura__Light_\stylesheet.css" />
-    <Content Include="INC\Jondu.Skandia.Simulators\webfonts\Letter_Gothic_Std\stylesheet.css" />
-    <Content Include="INC\Jondu.Skandia.Simulators\webfonts\Orator_Std\stylesheet.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

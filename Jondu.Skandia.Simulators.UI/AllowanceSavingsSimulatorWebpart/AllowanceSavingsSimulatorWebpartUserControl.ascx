@@ -12,19 +12,13 @@
     <div class="simulador" data-bind="visible: Step1Visibility">
         <div class="content">
             <img class="titulo1" src="/_layouts/15/INC/Jondu.Skandia.Simulators/img/titulo1.png" />
-
-            <h2>
-                <strong>¿CUÁNTO</strong> DEBE AHORRAR MENSUALMENTE PARA <strong>ALCANZAR SU META?</strong>
-
-            </h2>
+            <img src="/_layouts/15/INC/Jondu.Skandia.Simulators/img/first.png" width="275" height="76" />
             <a href="javascript:void(0);" data-bind="click: ShowSimulator">
                 <div class="btn-simular">
                 </div>
             </a>
-
         </div>
         <!--content-->
-
     </div>
     <div class="simulador2" data-bind="visible: Step2Visibility">
         <div class="content2">

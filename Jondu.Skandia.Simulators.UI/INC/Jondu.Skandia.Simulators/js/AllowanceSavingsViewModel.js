@@ -1,7 +1,7 @@
 ﻿/// <reference path="knockout-3.1.0.js" />
 /// <reference path="jquery-1.11.1.min.js" />
 var AllowanceSavingsViewModel = function (allowAnceSavingsViewModelID, baseRESTAPIUrl, calljavascriptfunction, chatjavascriptfunction, schedulejavascriptfunction) {
-
+    $.support.cors = true;
     if (!$.support.placeholder) {
         var active = document.activeElement;
         $(':text').focus(function () {
@@ -92,6 +92,7 @@ var AllowanceSavingsViewModel = function (allowAnceSavingsViewModelID, baseRESTA
         SP.UI.ModalDialog.showWaitScreenWithNoClose(SP.Res.dialogLoading15);
         $.ajax(
             {
+                crossDomain: true,
                 cache: false,
                 url: _baseRESTAPIUrl + '/api/SimuladorFinanciero/',
                 type: 'GET',
